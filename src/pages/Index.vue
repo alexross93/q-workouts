@@ -1,11 +1,15 @@
 <template>
   <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
+    <WorkoutTable/>
   </q-page>
 </template>
 
 <script>
+import WorkoutTable from 'components/WorkoutTable.vue'
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  components: {
+    WorkoutTable
+  }
 }
 </script>
